@@ -9,27 +9,76 @@
 </head>
 
 <body>
-    <div id="calculator"
-        style="max-width: 300px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background: #fafafa;">
-        <input type="text" id="display"
-            style="width: 100%; height: 40px; font-size: 1.2em; margin-bottom: 10px; text-align: right;" disabled />
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>/</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>*</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
-            <button>+</button>
+    <h1>MARCZAK GRZEGORZ
+        15753 - Azure Projekt
+    </h1>
+
+
+
+    <div class="projekty-grid">
+        <div id="zegar-projekt" class="projekt">
+            <h2>Zegar cyfrowy</h2>
+            <div id="zegar"></div>
+        </div>
+        <!-- Zmiana motywu strony -->
+        <div id="motyw-projekt" class="projekt">
+            <h2>Zmiana motywu strony</h2>
+            <button id="dark-mode-toggle">Przełącz motyw</button>
+        </div>
+
+        <div id="kalkulator-projekt" class="projekt">
+            <h2>Kalkulator</h2>
+            <div id="kalkulator">
+                <div id="kalkulator-wyswietlacz"></div>
+                <div class="kalkulator-przyciski">
+                    <button class="btn" data-action="ce">CE</button>
+                    <button class="btn" data-action="c">C</button>
+                    <button class="btn" data-action="del">DEL</button>
+                    <button class="btn" data-action="%">%</button>
+                    <button class="btn" data-action="7">7</button>
+                    <button class="btn" data-action="8">8</button>
+                    <button class="btn" data-action="9">9</button>
+                    <button class="btn" data-action="*">*</button>
+                    <button class="btn" data-action="4">4</button>
+                    <button class="btn" data-action="5">5</button>
+                    <button class="btn" data-action="6">6</button>
+                    <button class="btn" data-action="-">-</button>
+                    <button class="btn" data-action="1">1</button>
+                    <button class="btn" data-action="2">2</button>
+                    <button class="btn" data-action="3">3</button>
+                    <button class="btn" data-action="+">+</button>
+                    <button class="btn" data-action="0">0</button>
+                    <button class="btn" data-action=",">,</button>
+                    <button class="btn" data-action="=">=</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gra w zgadywanie liczby -->
+        <div id="gra-projekt" class="projekt">
+            <h2>Gra w zgadywanie liczby</h2>
+            <div id="gra-w-zgadywanie-liczby">
+                <input type="number" id="zgadywana-liczba" placeholder="Wprowadź liczbę (1-100)">
+                <button id="sprawdz-liczbe">Sprawdź</button>
+                <div id="wynik"></div>
+            </div>
+        </div>
+        <!-- Konwerter temperatury -->
+        <div id="kalkulator-temp-projekt" class="projekt">
+            <h2>Konwerter temperatury</h2>
+            <input type="number" id="temp-input" placeholder="Temperatura w °C">
+            <button id="convert-temp">Konwertuj</button>
+            <div id="temp-result"></div>
+        </div>
+        <!-- Parallax efekt -->
+        <div id="parallax-projekt" class="projekt parallax-tile">
+            <h2>Parallax efekt</h2>
+            <div class="parallax-box">
+                <div class="parallax-bg"></div>
+                <div class="parallax-content">
+                    <p>To jest kafelek z efektem parallax.<br>Przesuń myszką nad kafelkiem!</p>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
